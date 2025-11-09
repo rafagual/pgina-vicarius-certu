@@ -21,10 +21,6 @@ export function Hero() {
                 >
                     <div className="flex items-center justify-center gap-3 mb-6">
                         <Badge variant="secondary" className="bg-white/20 text-white border-white/30 hover:bg-white/30">
-                            Certus Cyber
-                        </Badge>
-                        <span className="text-white/60">•</span>
-                        <Badge variant="secondary" className="bg-white/20 text-white border-white/30 hover:bg-white/30">
                             Parceiro Oficial Vicarius
                         </Badge>
                     </div>
