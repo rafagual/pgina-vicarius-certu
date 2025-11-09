@@ -2,6 +2,8 @@ import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
+import { Label } from '@/components/ui/label'
 import { Phone, EnvelopeSimple, WhatsappLogo } from '@phosphor-icons/react'
 import { useState } from 'react'
 import { toast } from 'sonner'
@@ -12,13 +14,18 @@ export function ContactCTA() {
         email: '',
         company: '',
         phone: '',
+        employeeCount: '',
         message: ''
     })
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault()
+        if (!formData.employeeCount) {
+            toast.error('Por favor, selecione o número de colaboradores.')
+            return
+        }
         toast.success('Mensagem enviada! Entraremos em contato em breve.')
-        setFormData({ name: '', email: '', company: '', phone: '', message: '' })
+        setFormData({ name: '', email: '', company: '', phone: '', employeeCount: '', message: '' })
     }
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -91,6 +98,27 @@ export function ContactCTA() {
                                     className="bg-background"
                                 />
                             </div>
+                            <div className="space-y-2">
+                                <Label htmlFor="employee-count" className="text-foreground">
+                                    Número de Colaboradores *
+                                </Label>
+                                <Select
+                                    value={formData.employeeCount}
+                                    onValueChange={(value) => setFormData(prev => ({ ...prev, employeeCount: value }))}
+                                    required
+                                >
+                                    <SelectTrigger id="employee-count" className="bg-background">
+                                        <SelectValue placeholder="Selecione o tamanho da empresa" />
+                                    </SelectTrigger>
+                                    <SelectContent>
+                                        <SelectItem value="1-50">Até 50</SelectItem>
+                                        <SelectItem value="51-100">51-100</SelectItem>
+                                        <SelectItem value="101-200">101-200</SelectItem>
+                                        <SelectItem value="201-500">201-500</SelectItem>
+                                        <SelectItem value="501-1000">501-1000</SelectItem>
+                                    </SelectContent>
+                                </Select>
+                            </div>
                             <div>
                                 <Textarea
                                     id="message"
@@ -120,7 +148,7 @@ export function ContactCTA() {
                                 </div>
                                 <div>
                                     <h4 className="font-semibold text-foreground mb-1">Telefone</h4>
-                                    <p className="text-muted-foreground">+55 11 0000-0000</p>
+                                    <p className="text-muted-foreground">+55 21 96622-7814</p>
                                 </div>
                             </div>
                         </Card>
@@ -144,7 +172,7 @@ export function ContactCTA() {
                                 </div>
                                 <div>
                                     <h4 className="font-semibold text-foreground mb-1">WhatsApp</h4>
-                                    <p className="text-muted-foreground">+55 11 90000-0000</p>
+                                    <p className="text-muted-foreground">+55 21 96622-7814</p>
                                 </div>
                             </div>
                         </Card>

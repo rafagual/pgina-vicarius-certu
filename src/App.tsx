@@ -9,6 +9,7 @@ import { UseCases } from '@/components/UseCases'
 import { CertusCyberPartnership } from '@/components/CertusCyberPartnership'
 import { ContactCTA } from '@/components/ContactCTA'
 import { Footer } from '@/components/Footer'
+import { WhatsAppFloat } from '@/components/WhatsAppFloat'
 import { Toaster } from '@/components/ui/sonner'
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
             <CertusCyberPartnership />
             <ContactCTA />
             <Footer />
+            <WhatsAppFloat />
             <Toaster />
         </div>
     )
