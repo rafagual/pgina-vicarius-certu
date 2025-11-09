@@ -41,9 +41,8 @@ export function Hero() {
                         </Button>
                         <Button 
                             size="lg" 
-                            variant="outline"
                             onClick={scrollToContact}
-                            className="border-2 border-white text-white hover:bg-white/10 text-base font-semibold px-8 py-6"
+                            className="bg-accent text-accent-foreground hover:bg-accent/90 text-base font-semibold px-8 py-6 shadow-lg hover:shadow-xl transition-all"
                         >
                             Fale com Especialista
                             <ArrowRight className="ml-2" weight="bold" />
