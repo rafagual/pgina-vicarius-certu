@@ -4,7 +4,7 @@ import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { Label } from '@/components/ui/label'
-import { Phone, EnvelopeSimple, WhatsappLogo } from '@phosphor-icons/react'
+import { EnvelopeSimple } from '@phosphor-icons/react'
 import { useState } from 'react'
 import { toast } from 'sonner'
 
@@ -144,43 +144,19 @@ export function ContactCTA() {
                         <Card className="p-6 bg-white/95 backdrop-blur">
                             <div className="flex items-start gap-4">
                                 <div className="p-3 rounded-lg bg-accent/10">
-                                    <Phone className="text-accent" size={24} weight="duotone" />
-                                </div>
-                                <div>
-                                    <h4 className="font-semibold text-foreground mb-1">Telefone</h4>
-                                    <p className="text-muted-foreground">+55 21 96622-7814</p>
-                                </div>
-                            </div>
-                        </Card>
-
-                        <Card className="p-6 bg-white/95 backdrop-blur">
-                            <div className="flex items-start gap-4">
-                                <div className="p-3 rounded-lg bg-accent/10">
                                     <EnvelopeSimple className="text-accent" size={24} weight="duotone" />
                                 </div>
                                 <div>
                                     <h4 className="font-semibold text-foreground mb-1">E-mail</h4>
-                                    <p className="text-muted-foreground">contato@certuscyber.com.br</p>
-                                </div>
-                            </div>
-                        </Card>
-
-                        <Card className="p-6 bg-white/95 backdrop-blur">
-                            <div className="flex items-start gap-4">
-                                <div className="p-3 rounded-lg bg-accent/10">
-                                    <WhatsappLogo className="text-accent" size={24} weight="duotone" />
-                                </div>
-                                <div>
-                                    <h4 className="font-semibold text-foreground mb-1">WhatsApp</h4>
-                                    <p className="text-muted-foreground">+55 21 96622-7814</p>
+                                    <p className="text-muted-foreground">contato@vicarius.com</p>
                                 </div>
                             </div>
                         </Card>
 
                         <div className="p-6 bg-white/10 backdrop-blur rounded-lg border border-white/20">
-                            <h4 className="font-semibold text-white mb-3">Sobre a Certus Cyber</h4>
+                            <h4 className="font-semibold text-white mb-3">Sobre o Vicarius</h4>
                             <p className="text-white/90 text-sm leading-relaxed mb-4">
-                                A Certus Cyber é parceiro oficial da Vicarius no Brasil, oferecendo suporte técnico especializado, implementação e treinamento para maximizar o valor da plataforma vRx.
+                                O Vicarius oferece a plataforma vRx, solução líder em gerenciamento e remediação automatizada de vulnerabilidades.
                             </p>
                             <p className="text-white/90 text-sm leading-relaxed">
                                 Nossa equipe de especialistas em cibersegurança está pronta para ajudar sua organização a alcançar níveis superiores de proteção contra vulnerabilidades.

@@ -1,5 +1,4 @@
 import { Button } from '@/components/ui/button'
-import { Badge } from '@/components/ui/badge'
 import { ArrowRight } from '@phosphor-icons/react'
 import { motion } from 'framer-motion'
 
@@ -19,12 +18,6 @@ export function Hero() {
                     transition={{ duration: 0.6 }}
                     className="text-center"
                 >
-                    <div className="flex items-center justify-center gap-3 mb-6">
-                        <Badge variant="secondary" className="bg-white/20 text-white border-white/30 hover:bg-white/30">
-                            Parceiro Oficial Vicarius
-                        </Badge>
-                    </div>
-                    
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight">
                         Gerenciamento e Remediação de<br className="hidden md:block" /> Vulnerabilidades Automatizado
                     </h1>
