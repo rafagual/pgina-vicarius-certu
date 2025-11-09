@@ -29,31 +29,11 @@ export function Footer() {
                     <div>
                         <h4 className="font-semibold mb-4 text-lg">Sobre Vicarius</h4>
                         <ul className="space-y-2 text-sm text-white/80">
-                            <li>
-                                <a href="https://www.vicarius.io/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                                    Plataforma vRx
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.vicarius.io/solution/vulnerability-management" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                                    Vulnerability Management
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.vicarius.io/solution/vulnerability-remediation" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                                    Vulnerability Remediation
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.vicarius.io/case-studies" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                                    Cases de Sucesso
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.vicarius.io/apps-os-patch-catalog" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                                    Catálogo de Patches
-                                </a>
-                            </li>
+                            <li>Plataforma vRx</li>
+                            <li>Vulnerability Management</li>
+                            <li>Vulnerability Remediation</li>
+                            <li>Catálogo de 40K+ Patches</li>
+                            <li>Priorização Inteligente</li>
                         </ul>
                     </div>
 
@@ -71,14 +51,9 @@ export function Footer() {
                         </ul>
                         <div className="mt-6">
                             <p className="text-xs text-white/60 mb-2">Powered by</p>
-                            <a 
-                                href="https://www.vicarius.io/" 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                className="inline-block text-white font-bold text-lg hover:text-white/80 transition-colors"
-                            >
+                            <span className="inline-block text-white font-bold text-lg">
                                 Vicarius
-                            </a>
+                            </span>
                         </div>
                     </div>
                 </div>

@@ -20,11 +20,11 @@ A professional partner showcase page for Vicarius on the Certus Cyber website, p
 - **Success criteria**: Clear brand presence, compelling value proposition, prominent CTA button
 
 ### Platform Overview Section
-- **Functionality**: Explains what Vicarius is and its core capabilities (vRx platform)
-- **Purpose**: Educate visitors about the platform's purpose and main features
+- **Functionality**: Explains what Vicarius is and its core capabilities (vRx platform) with visual references (images/videos)
+- **Purpose**: Educate visitors about the platform's purpose and main features through visual demonstrations
 - **Trigger**: User scrolls past hero
-- **Progression**: User scrolls → Sees platform description → Understands vulnerability management + remediation capabilities → Learns about automation benefits
-- **Success criteria**: Clear explanation of platform, key differentiators highlighted
+- **Progression**: User scrolls → Sees platform description with screenshots → Understands vulnerability management + remediação capabilities → Learns about automation benefits through visual examples
+- **Success criteria**: Clear explanation of platform with visual assets (images/videos from Vicarius CDN), key differentiators highlighted, no external links to Vicarius site
 
 ### Key Features Grid
 - **Functionality**: Visual grid showcasing main features (patch management, vulnerability scanning, automation, etc.)
@@ -41,11 +41,11 @@ A professional partner showcase page for Vicarius on the Certus Cyber website, p
 - **Success criteria**: Clear business benefits with supporting details
 
 ### Competitive Advantages
-- **Functionality**: Highlights how Vicarius compares to competitors (Tenable, Qualys, ManageEngine, etc.)
-- **Purpose**: Position Vicarius as superior alternative to established solutions
+- **Functionality**: Highlights how Vicarius compares to competitors (Tenable, Qualys, ManageEngine, etc.) through feature comparison
+- **Purpose**: Position Vicarius as superior alternative to established solutions, establishing Certus Cyber's expertise
 - **Trigger**: User evaluates platform
-- **Progression**: User scrolls → Sees comparison points → Understands unique differentiators → Validates platform choice
-- **Success criteria**: Key advantages over major competitors clearly stated
+- **Progression**: User scrolls → Sees comparison points → Understands unique differentiators → Contacts Certus Cyber for more information
+- **Success criteria**: Key advantages over major competitors clearly stated, focus on driving demo requests rather than external research
 
 ### Use Cases / Industries Served
 - **Functionality**: Shows relevant scenarios and industries where Vicarius excels
@@ -55,11 +55,18 @@ A professional partner showcase page for Vicarius on the Certus Cyber website, p
 - **Success criteria**: 3-5 relevant use cases or industries displayed
 
 ### Contact/Demo CTA Section
-- **Functionality**: Final call-to-action for demo request or contact
-- **Purpose**: Convert interested visitors into leads
+- **Functionality**: Final call-to-action for demo request or contact with Certus Cyber
+- **Purpose**: Convert interested visitors into leads for Certus Cyber demos
 - **Trigger**: User reaches bottom of page or clicks CTA buttons
-- **Progression**: User interested → Clicks CTA → Sees contact information or contact form → Can reach out to Certus Cyber
-- **Success criteria**: Prominent CTA with contact options (phone, email, form)
+- **Progression**: User interested → Clicks CTA → Sees contact form/information → Requests demo with Certus Cyber experts
+- **Success criteria**: Prominent CTA emphasizing Certus Cyber's role as the expert partner, contact form or contact information clearly displayed
+
+### Visual Assets Strategy
+- **Functionality**: Display images and videos from Vicarius CDN/hosting to showcase platform visually
+- **Purpose**: Provide visual proof and understanding of the platform without directing users away from our page
+- **Trigger**: Throughout page scroll
+- **Progression**: User sees screenshots/videos → Understands platform interface → Becomes convinced of value → Contacts Certus for demo
+- **Success criteria**: All visual assets load from CDN, no clickable links to Vicarius site, images enhance credibility and understanding
 
 ### Partner Badge/Certification
 - **Functionality**: Displays Certus Cyber as official Vicarius partner in Brazil
@@ -73,12 +80,14 @@ A professional partner showcase page for Vicarius on the Certus Cyber website, p
 - **No JavaScript**: Content remains fully accessible with progressive enhancement for animations
 - **Slow connections**: Images lazy load, critical content loads first
 - **Mobile users**: Responsive design adapts grid layouts to single column, CTAs remain accessible
-- **Multiple CTAs clicked**: All CTAs lead to consistent contact/demo request action
+- **Multiple CTAs clicked**: All CTAs lead to consistent contact/demo request action with Certus Cyber
 - **Long content**: Sticky navigation or back-to-top button for easy navigation
+- **External link clicks**: No external links to Vicarius site - all CTAs drive to Certus Cyber contact/demo
+- **Visual asset loading**: Graceful fallbacks if CDN images fail to load
 
 ## Design Direction
 
-The design should feel corporate, trustworthy, and modern with a professional B2B SaaS aesthetic that aligns with cybersecurity industry standards - clean interface with strategic use of color to highlight CTAs and important information, balancing informative content density with breathing room for readability.
+The design should feel corporate, trustworthy, and modern with a professional B2B SaaS aesthetic that aligns with cybersecurity industry standards - clean interface with strategic use of color to highlight CTAs and important information, balancing informative content density with breathing room for readability. All visual references to Vicarius platform (screenshots, videos) serve to establish credibility and understanding, while all interactive elements drive users to contact Certus Cyber as the expert partner rather than external research.
 
 ## Color Selection
 
