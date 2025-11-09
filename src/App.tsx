@@ -9,6 +9,7 @@ import { UseCases } from '@/components/UseCases'
 import { DemoScheduling } from '@/components/DemoScheduling'
 import { ContactCTA } from '@/components/ContactCTA'
 import { Footer } from '@/components/Footer'
+import { WhatsAppFloat } from '@/components/WhatsAppFloat'
 import { Toaster } from '@/components/ui/sonner'
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
             <DemoScheduling />
             <ContactCTA />
             <Footer />
+            <WhatsAppFloat />
             <Toaster />
         </div>
     )
