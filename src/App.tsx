@@ -6,7 +6,6 @@ import { Benefits } from '@/components/Benefits'
 import { VicariusVsTraditional } from '@/components/VicariusVsTraditional'
 import { CompetitiveAdvantages } from '@/components/CompetitiveAdvantages'
 import { UseCases } from '@/components/UseCases'
-import { CertusCyberPartnership } from '@/components/CertusCyberPartnership'
 import { ContactCTA } from '@/components/ContactCTA'
 import { Footer } from '@/components/Footer'
 import { WhatsAppFloat } from '@/components/WhatsAppFloat'
@@ -23,7 +22,6 @@ function App() {
             <VicariusVsTraditional />
             <CompetitiveAdvantages />
             <UseCases />
-            <CertusCyberPartnership />
             <ContactCTA />
             <Footer />
             <WhatsAppFloat />
