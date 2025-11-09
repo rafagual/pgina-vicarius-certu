@@ -4,7 +4,7 @@ import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { Label } from '@/components/ui/label'
-import { EnvelopeSimple } from '@phosphor-icons/react'
+import { EnvelopeSimple, CalendarCheck } from '@phosphor-icons/react'
 import { useState } from 'react'
 import { toast } from 'sonner'
 
@@ -35,12 +35,16 @@ export function ContactCTA() {
         }))
     }
 
+    const scrollToSchedule = () => {
+        document.getElementById('schedule-demo')?.scrollIntoView({ behavior: 'smooth' })
+    }
+
     return (
         <section id="contact" className="py-16 md:py-24 bg-gradient-to-br from-primary to-accent">
             <div className="max-w-7xl mx-auto px-4 md:px-6">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-                        Solicite uma Demonstração
+                        Entre em Contato
                     </h2>
                     <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto">
                         Descubra como o Vicarius pode transformar a gestão de vulnerabilidades da sua organização
@@ -50,7 +54,7 @@ export function ContactCTA() {
                 <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-start">
                     <Card className="p-8 bg-white">
                         <h3 className="text-2xl font-bold text-foreground mb-6">
-                            Entre em Contato
+                            Envie sua Mensagem
                         </h3>
                         <form onSubmit={handleSubmit} className="space-y-4">
                             <div>
@@ -150,6 +154,29 @@ export function ContactCTA() {
                                     <h4 className="font-semibold text-foreground mb-1">E-mail</h4>
                                     <p className="text-muted-foreground">contato@vicarius.com</p>
                                 </div>
+                            </div>
+                        </Card>
+
+                        <Card className="p-6 bg-white/95 backdrop-blur">
+                            <div className="flex flex-col gap-4">
+                                <div className="flex items-start gap-4">
+                                    <div className="p-3 rounded-lg bg-primary/10">
+                                        <CalendarCheck className="text-primary" size={24} weight="duotone" />
+                                    </div>
+                                    <div className="flex-1">
+                                        <h4 className="font-semibold text-foreground mb-1">Prefere agendar?</h4>
+                                        <p className="text-muted-foreground text-sm mb-3">
+                                            Escolha o melhor horário para uma demonstração ao vivo
+                                        </p>
+                                    </div>
+                                </div>
+                                <Button 
+                                    onClick={scrollToSchedule}
+                                    className="w-full bg-accent hover:bg-accent/90 text-white font-semibold"
+                                    size="lg"
+                                >
+                                    Agendar Demo
+                                </Button>
                             </div>
                         </Card>
 

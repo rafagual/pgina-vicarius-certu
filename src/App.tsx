@@ -6,6 +6,7 @@ import { Benefits } from '@/components/Benefits'
 import { VicariusVsTraditional } from '@/components/VicariusVsTraditional'
 import { CompetitiveAdvantages } from '@/components/CompetitiveAdvantages'
 import { UseCases } from '@/components/UseCases'
+import { DemoScheduling } from '@/components/DemoScheduling'
 import { ContactCTA } from '@/components/ContactCTA'
 import { Footer } from '@/components/Footer'
 import { Toaster } from '@/components/ui/sonner'
@@ -21,6 +22,7 @@ function App() {
             <VicariusVsTraditional />
             <CompetitiveAdvantages />
             <UseCases />
+            <DemoScheduling />
             <ContactCTA />
             <Footer />
             <Toaster />

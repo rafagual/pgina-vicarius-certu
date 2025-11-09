@@ -1,10 +1,14 @@
 import { Button } from '@/components/ui/button'
-import { ArrowRight } from '@phosphor-icons/react'
+import { ArrowRight, CalendarCheck } from '@phosphor-icons/react'
 import { motion } from 'framer-motion'
 
 export function Hero() {
     const scrollToContact = () => {
         document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
+    }
+
+    const scrollToSchedule = () => {
+        document.getElementById('schedule-demo')?.scrollIntoView({ behavior: 'smooth' })
     }
 
     return (
@@ -29,11 +33,11 @@ export function Hero() {
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                         <Button 
                             size="lg" 
-                            onClick={scrollToContact}
+                            onClick={scrollToSchedule}
                             className="bg-white text-primary hover:bg-white/90 text-base font-semibold px-8 py-6 shadow-lg hover:shadow-xl transition-all"
                         >
-                            Solicitar Demonstração
-                            <ArrowRight className="ml-2" weight="bold" />
+                            Agendar Demo
+                            <CalendarCheck className="ml-2" weight="bold" />
                         </Button>
                         <Button 
                             size="lg" 
@@ -42,6 +46,7 @@ export function Hero() {
                             className="border-2 border-white text-white hover:bg-white/10 text-base font-semibold px-8 py-6"
                         >
                             Fale com Especialista
+                            <ArrowRight className="ml-2" weight="bold" />
                         </Button>
                     </div>
                 </motion.div>
