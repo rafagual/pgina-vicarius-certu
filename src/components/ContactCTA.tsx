@@ -152,7 +152,7 @@ export function ContactCTA() {
                                 </div>
                                 <div>
                                     <h4 className="font-semibold text-foreground mb-1">E-mail</h4>
-                                    <p className="text-muted-foreground">contato@vicarius.com</p>
+                                    <p className="text-muted-foreground">vicarius@certuscyber.com.br</p>
                                 </div>
                             </div>
                         </Card>
