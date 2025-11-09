@@ -19,9 +19,15 @@ export function Hero() {
                     transition={{ duration: 0.6 }}
                     className="text-center"
                 >
-                    <Badge variant="secondary" className="mb-6 bg-white/20 text-white border-white/30 hover:bg-white/30">
-                        Parceiro Oficial Vicarius no Brasil
-                    </Badge>
+                    <div className="flex items-center justify-center gap-3 mb-6">
+                        <Badge variant="secondary" className="bg-white/20 text-white border-white/30 hover:bg-white/30">
+                            Certus Cyber
+                        </Badge>
+                        <span className="text-white/60">•</span>
+                        <Badge variant="secondary" className="bg-white/20 text-white border-white/30 hover:bg-white/30">
+                            Parceiro Oficial Vicarius
+                        </Badge>
+                    </div>
                     
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight">
                         Gerenciamento e Remediação de<br className="hidden md:block" /> Vulnerabilidades Automatizado

@@ -150,9 +150,12 @@ export function ContactCTA() {
                         </Card>
 
                         <div className="p-6 bg-white/10 backdrop-blur rounded-lg border border-white/20">
-                            <h4 className="font-semibold text-white mb-3">Parceiro Certificado</h4>
-                            <p className="text-white/90 text-sm leading-relaxed">
+                            <h4 className="font-semibold text-white mb-3">Sobre a Certus Cyber</h4>
+                            <p className="text-white/90 text-sm leading-relaxed mb-4">
                                 A Certus Cyber é parceiro oficial da Vicarius no Brasil, oferecendo suporte técnico especializado, implementação e treinamento para maximizar o valor da plataforma vRx.
+                            </p>
+                            <p className="text-white/90 text-sm leading-relaxed">
+                                Nossa equipe de especialistas em cibersegurança está pronta para ajudar sua organização a alcançar níveis superiores de proteção contra vulnerabilidades.
                             </p>
                         </div>
                     </div>

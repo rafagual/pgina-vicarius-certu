@@ -1,9 +1,12 @@
 import { Hero } from '@/components/Hero'
 import { PlatformOverview } from '@/components/PlatformOverview'
+import { VicariusShowcase } from '@/components/VicariusShowcase'
 import { Features } from '@/components/Features'
 import { Benefits } from '@/components/Benefits'
+import { VicariusVsTraditional } from '@/components/VicariusVsTraditional'
 import { CompetitiveAdvantages } from '@/components/CompetitiveAdvantages'
 import { UseCases } from '@/components/UseCases'
+import { CertusCyberPartnership } from '@/components/CertusCyberPartnership'
 import { ContactCTA } from '@/components/ContactCTA'
 import { Footer } from '@/components/Footer'
 import { Toaster } from '@/components/ui/sonner'
@@ -13,10 +16,13 @@ function App() {
         <div className="min-h-screen bg-background">
             <Hero />
             <PlatformOverview />
+            <VicariusShowcase />
             <Features />
             <Benefits />
+            <VicariusVsTraditional />
             <CompetitiveAdvantages />
             <UseCases />
+            <CertusCyberPartnership />
             <ContactCTA />
             <Footer />
             <Toaster />

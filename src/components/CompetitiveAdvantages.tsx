@@ -1,38 +1,44 @@
 import { Card } from '@/components/ui/card'
-import { TrendUp } from '@phosphor-icons/react'
+import { TrendUp, ArrowRight } from '@phosphor-icons/react'
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 
 const advantages = [
     {
-        competitor: 'Tenable & Qualys',
+        competitor: 'Tenable',
         advantage: 'Remediação Automatizada Incluída',
-        description: 'Enquanto Tenable e Qualys apenas detectam vulnerabilidades, o Vicarius também as corrige automaticamente.'
+        description: 'Enquanto Tenable apenas detecta vulnerabilidades, o Vicarius também as corrige automaticamente com 40K+ patches.',
+        link: 'https://www.vicarius.io/comparisons/tenable'
+    },
+    {
+        competitor: 'Qualys',
+        advantage: 'Console Unificado Completo',
+        description: 'Diferente do Qualys, oferecemos descoberta, priorização e remediação em uma única plataforma intuitiva.',
+        link: 'https://www.vicarius.io/comparisons/qualys'
     },
     {
         competitor: 'ManageEngine',
         advantage: 'Catálogo Expandido de Patches',
-        description: 'Mais de 40.000 patches vs. catálogo limitado do ManageEngine. Suporte para apps de terceiros e SO.'
+        description: 'Mais de 40.000 patches vs. catálogo limitado do ManageEngine. Suporte para apps de terceiros e SO.',
+        link: 'https://www.vicarius.io/comparisons/manageengine'
     },
     {
         competitor: 'Microsoft Intune',
         advantage: 'Suporte Multi-Plataforma',
-        description: 'Gerencia Windows, macOS e Linux. Intune é limitado ao ecossistema Microsoft.'
+        description: 'Gerencia Windows, macOS e Linux. Intune é limitado ao ecossistema Microsoft.',
+        link: 'https://www.vicarius.io/comparisons/microsoft-intune'
     },
     {
         competitor: 'Microsoft Defender',
         advantage: 'Foco em Vulnerabilidades',
-        description: 'Plataforma dedicada a gestão de vulnerabilidades, não apenas antivírus e proteção de endpoint.'
+        description: 'Plataforma dedicada a gestão de vulnerabilidades, não apenas antivírus e proteção de endpoint.',
+        link: 'https://www.vicarius.io/comparisons/microsoft-defender'
     },
     {
-        competitor: 'Soluções Tradicionais',
-        advantage: 'Console Unificado',
-        description: 'Uma única plataforma para descoberta, avaliação, priorização e remediação. Sem necessidade de múltiplas ferramentas.'
-    },
-    {
-        competitor: 'Concorrentes em Geral',
+        competitor: 'Concorrentes',
         advantage: 'Tempo de Implantação',
-        description: 'Deploy rápido em dias, não meses. Interface intuitiva que reduz curva de aprendizado.'
+        description: 'Deploy rápido em dias, não meses. Interface intuitiva que reduz curva de aprendizado.',
+        link: 'https://www.vicarius.io/vrx-vs-competition'
     }
 ]
 
@@ -65,7 +71,9 @@ export function CompetitiveAdvantages() {
                             animate={isInView ? { opacity: 1, scale: 1 } : {}}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                         >
-                            <Card className="p-6 h-full bg-white hover:shadow-xl transition-all border-border hover:border-accent/50 group">
+                            <Card className="p-6 h-full bg-white hover:shadow-xl transition-all border-border hover:border-accent/50 group cursor-pointer"
+                                onClick={() => window.open(item.link, '_blank')}
+                            >
                                 <div className="flex items-center gap-2 mb-4">
                                     <TrendUp 
                                         className="text-accent group-hover:scale-110 transition-transform" 
@@ -79,9 +87,13 @@ export function CompetitiveAdvantages() {
                                 <h3 className="text-lg font-bold text-foreground mb-3">
                                     {item.advantage}
                                 </h3>
-                                <p className="text-sm text-muted-foreground leading-relaxed">
+                                <p className="text-sm text-muted-foreground leading-relaxed mb-4">
                                     {item.description}
                                 </p>
+                                <div className="flex items-center gap-2 text-accent text-sm font-semibold group-hover:gap-3 transition-all">
+                                    <span>Saiba mais</span>
+                                    <ArrowRight size={16} weight="bold" />
+                                </div>
                             </Card>
                         </motion.div>
                     ))}

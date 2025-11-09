@@ -1,5 +1,5 @@
 import { Card } from '@/components/ui/card'
-import { Bank, ShoppingCart, Heart, Globe, Factory } from '@phosphor-icons/react'
+import { Bank, ShoppingCart, Heart, Globe, Factory, Briefcase } from '@phosphor-icons/react'
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 
@@ -33,6 +33,12 @@ const useCases = [
         title: 'Tecnologia e SaaS',
         description: 'Escale a segurança conforme sua infraestrutura cresce, mantendo compliance e confiança dos clientes.',
         benefits: ['Escalabilidade', 'Multi-tenant security', 'Certificações de segurança']
+    },
+    {
+        icon: Briefcase,
+        title: 'PMEs',
+        description: 'Segurança de nível corporativo com custo acessível e gestão simplificada, ideal para pequenas e médias empresas.',
+        benefits: ['Fácil implementação', 'Custo-benefício', 'Proteção empresarial']
     }
 ]
 
@@ -58,45 +64,12 @@ export function UseCases() {
                 </motion.div>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {useCases.slice(0, 3).map((useCase, index) => (
+                    {useCases.map((useCase, index) => (
                         <motion.div
                             key={index}
                             initial={{ opacity: 0, y: 20 }}
                             animate={isInView ? { opacity: 1, y: 0 } : {}}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                        >
-                            <Card className="p-6 h-full bg-card hover:shadow-lg transition-all border-border hover:border-primary/30 group">
-                                <useCase.icon 
-                                    className="text-primary mb-4 group-hover:scale-110 transition-transform" 
-                                    size={48} 
-                                    weight="duotone"
-                                />
-                                <h3 className="text-xl font-bold text-foreground mb-3">
-                                    {useCase.title}
-                                </h3>
-                                <p className="text-sm md:text-base text-muted-foreground leading-relaxed mb-4">
-                                    {useCase.description}
-                                </p>
-                                <ul className="space-y-2">
-                                    {useCase.benefits.map((benefit, idx) => (
-                                        <li key={idx} className="text-sm text-muted-foreground flex items-center gap-2">
-                                            <div className="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" />
-                                            {benefit}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </Card>
-                        </motion.div>
-                    ))}
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-8 mt-8 max-w-4xl mx-auto">
-                    {useCases.slice(3).map((useCase, index) => (
-                        <motion.div
-                            key={index + 3}
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={isInView ? { opacity: 1, y: 0 } : {}}
-                            transition={{ duration: 0.5, delay: (index + 3) * 0.1 }}
                         >
                             <Card className="p-6 h-full bg-card hover:shadow-lg transition-all border-border hover:border-primary/30 group">
                                 <useCase.icon 
